@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4817611528897212724}
   - component: {fileID: 4817611528897212725}
   m_Layer: 5
-  m_Name: InsuranceTitle
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 4817611529177745957}
   - component: {fileID: 4817611529177745958}
   m_Layer: 5
-  m_Name: InsuranceOpt3Text
+  m_Name: Opt2Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -168,12 +168,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4817611529620251319}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: 0}
-  m_SizeDelta: {x: 480, y: 50}
+  m_AnchoredPosition: {x: 232, y: 0}
+  m_SizeDelta: {x: 432, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4817611529177745957
 CanvasRenderer:
@@ -307,9 +307,9 @@ RectTransform:
   - {fileID: 6284424899470762017}
   - {fileID: 6284424898649288994}
   - {fileID: 6284424899237246170}
-  - {fileID: 4817611529658589404}
   - {fileID: 4817611529771397171}
   - {fileID: 4817611529177745959}
+  - {fileID: 4817611529658589404}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 4817611529658589346}
   - component: {fileID: 4817611529658589347}
   m_Layer: 5
-  m_Name: InsuranceOpt1Text
+  m_Name: Opt3Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -387,12 +387,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4817611529620251319}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: -64}
-  m_SizeDelta: {x: 480, y: 50}
+  m_AnchoredPosition: {x: 232, y: -64}
+  m_SizeDelta: {x: 432, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4817611529658589346
 CanvasRenderer:
@@ -503,7 +503,7 @@ GameObject:
   - component: {fileID: 4817611529771397169}
   - component: {fileID: 4817611529771397170}
   m_Layer: 5
-  m_Name: InsuranceOpt2Text
+  m_Name: Opt1Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -522,12 +522,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4817611529620251319}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 256, y: 64}
-  m_SizeDelta: {x: 480, y: 50}
+  m_AnchoredPosition: {x: 232, y: 64}
+  m_SizeDelta: {x: 432, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4817611529771397169
 CanvasRenderer:
@@ -719,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580019165922319442, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_Name
-      value: ExitInsurance
+      value: ExitButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
@@ -821,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580019165922319442, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_Name
-      value: InsuranceOpt3
+      value: Opt3Button
       objectReference: {fileID: 0}
     - target: {fileID: 1580019166103364673, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_text
@@ -927,7 +927,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580019165922319442, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_Name
-      value: InsuranceOpt1
+      value: Opt1Button
       objectReference: {fileID: 0}
     - target: {fileID: 1580019166103364673, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_text
@@ -1033,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1580019165922319442, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_Name
-      value: InsuranceOpt2
+      value: Opt2Button
       objectReference: {fileID: 0}
     - target: {fileID: 1580019166103364673, guid: f1a8458d5a604a747819e3eeebc7d56a, type: 3}
       propertyPath: m_text

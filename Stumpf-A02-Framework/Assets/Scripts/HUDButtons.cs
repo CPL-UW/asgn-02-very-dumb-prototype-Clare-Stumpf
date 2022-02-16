@@ -21,6 +21,15 @@ public class HUDButtons : MonoBehaviour
     public GameObject financeOptions;
     public GameObject otherOptions;
 
+    public static bool subMenuOn;
+ 
+    public static bool GetSubMenuOn() {
+        return subMenuOn;
+    }
+
+    public static void ChangeSubMenuOn(bool newState) {
+        subMenuOn = newState;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +39,7 @@ public class HUDButtons : MonoBehaviour
         insuranceButton.onClick.AddListener(() => buttonCallBack(insuranceButton));
         financeButton.onClick.AddListener(() => buttonCallBack(financeButton));
         otherButton.onClick.AddListener(() => buttonCallBack(otherButton));
-
+        subMenuOn = false;
      }
 
     void buttonCallBack(Button button)
@@ -43,16 +52,32 @@ public class HUDButtons : MonoBehaviour
         }
         if(button == insuranceButton) {
             insuranceOptions.SetActive(true);
+            buildingOptions.SetActive(false);
+            financeOptions.SetActive(false);
+            otherOptions.SetActive(false);
+            subMenuOn = true;
         }
         if(button == buildingButton) {
+            insuranceOptions.SetActive(false);
             buildingOptions.SetActive(true);
-        }
+            financeOptions.SetActive(false);
+            otherOptions.SetActive(false);    
+            subMenuOn = true;    
+            }
         if(button == financeButton) {
+            insuranceOptions.SetActive(false);
+            buildingOptions.SetActive(false);
             financeOptions.SetActive(true);
-        }
+            otherOptions.SetActive(false);
+            subMenuOn = true;        
+            }
         if(button == otherButton) {
+            insuranceOptions.SetActive(false);
+            buildingOptions.SetActive(false);
+            financeOptions.SetActive(false);
             otherOptions.SetActive(true);
-        }
+            subMenuOn = true;        
+            }
     }
 }
 
